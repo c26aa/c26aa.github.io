@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+
+
+<style type="text/css">
+	
+#square{
+	height:100%;
+	width:100%;
+	position:absolute;
+	background-image:url(https://i.scdn.co/image/ab67616d00001e02e6de62310087009e6979bb37);
+	background-repeat:no-repeat;
+	background-color:grey;
+	background-size:cover;
+
+
+}
+
+
+
+body{
+	margin:0px;
+	scroll-behavior:none;
+	background-image:contain;
+	background-image:cover;
+	border-spacing:0px;
+}
+</style>
+
+
+
+</head>
+<body>
+<div id="square"></div>
+<audio src="luca.mp3"  id="song"></audio>
+
+
+<script type="text/javascript">
+	var clicks =0;
+	document.addEventListener("click", function(){
+clicks = clicks+1
+console.log(clicks)
+
+if(clicks%2 == 1) {
+document.body.style.backgroundImage="url(https://i.scdn.co/image/ab67616d00001e02e6de62310087009e6979bb37)"
+song.play()
+	}
+
+if (clicks%2 == 0) {
+	document.body.style.backgroundImage="url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQx5O03FjGcInZGPGXdGx6DdRC985_rVb5M-g&usqp=CAU)"
+	song.pause()
+}
+
+
+	})
+
+
+	
+</script>
+
+
+
+</body>
+</html>
