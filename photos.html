@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		#one{
+			animation-duration:2s;
+			animation-iteration-count: 1;
+			background-image:url();
+			height:200px;
+			width:200px;
+		}
+
+		#two{
+			animation-duration:2s;
+			animation-iteration-count: 1;
+			background-image:url();
+			height:200px;
+			width:200px;
+		}
+				
+		#three{
+			animation-duration:2s;
+			animation-iteration-count: 1;
+			background-image:url();
+			height:200px;
+			width:200px;
+		}		
+			
+		#zero{
+			animation-duration:2s;
+			animation-iteration-count: 1;
+			background-image:url();
+			height:200px;
+			width:200px;
+		}	
+		#four{
+			animation-duration:2s;
+			animation-iteration-count: 1;
+			background-image:url();
+			height:200px;
+			width:200px;
+		}	
+		
+		#camera{
+			width:400px;
+			height:400px;
+			background-image:url(camera.png);
+			box-shadow: 5px 10px;
+
+			background-repeat:no-repeat;
+			position:relative;
+			background-size:cover;
+			opacity:1;
+			border-radius:50%;
+			
+  
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    outline-offset: 4px;
+
+
+		}
+
+		body{
+			background-color:blue;
+
+		}
+
+		.images{
+			position:relative;
+			opacity:0;
+			width:75px;
+			height:75px;
+			background-color:green;
+			transition:2s;
+
+		}
+
+		#text{
+			height:100px;
+			width:300px;
+			top:30px;
+			left:200px;
+			font-size:40px;
+			position:absolute;
+		}
+
+
+ 
+
+  #camera:active  {
+    transform: translateY(-2px);
+  }
+</style>
+
+
+
+
+
+
+
+
+
+	
+</head>
+<body>
+
+
+
+
+
+
+
+
+<center>
+
+<div id="camera"></div> <div id="text">Click to reveal the five photos</div>
+
+
+	<div class="images"></div>
+<div id="one" class="images"></div>
+<div  id="two" class="images"></div>
+<div id="three" class="images"></div>
+<div id="four" class="images"></div>
+<div id="zero" class="images"></div>
+</center>
+
+
+
+<script type="text/javascript">
+	camera.addEventListener("click", function(){
+	
+		var random = Math.round(Math.random()*4)
+			console.log(random)
+
+			if(random==1){
+				one.style.opacity ="1";
+				one.style.animationName = "spinout"
+				// one.style.top = "100px"
+				one.style.top = "100px"
+				one.style.position = "absolute";
+				one.style.transform = "rotate(720deg)";
+				one.style.left="50px";
+				// one.style.top="50px";
+			}
+
+			if(random==2){
+				two.style.opacity ="1";
+				// two.style.animationName = "spinout"
+				// two.style.top = "100px"
+				two.style.top = "50px"
+				two.style.position = "absolute";
+				two.style.transform = "rotate(1080deg)";
+				two.style.left="200px";
+				two.style.top="400px";	
+			}
+
+			if(random==3){
+				three.style.opacity ="1";
+				// two.style.animationName = "spinout"
+				// two.style.top = "100px"
+				three.style.top = "50px"
+				three.style.position = "absolute";
+				three.style.transform = "rotate(1440deg)";
+				three.style.left="600px";
+				three.style.top="450px";	
+				
+			}
+if(random==0){
+				zero.style.opacity ="1";
+				// two.style.animationName = "spinout"
+				// two.style.top = "100px"
+				zero.style.top = "50px"
+				zero.style.position = "absolute";
+				zero.style.transform = "rotate(1440deg)";
+				zero.style.left="1000px";
+				zero.style.top="200px";
+
+}
+
+
+if(random==4){
+				four.style.opacity ="1";
+				// two.style.animationName = "spinout"
+				// two.style.top = "100px"
+				four.style.top = "50px"
+				four.style.position = "absolute";
+				four.style.transform = "rotate(1440deg)";
+				four.style.left="900px";
+				four.style.top="500px";
+}
+	})
+
+</script>
+
+
+</body>
+</html>

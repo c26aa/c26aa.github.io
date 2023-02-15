@@ -15,23 +15,28 @@
 	<style type="text/css">
 
 		#projects{
-			position:absolute;
-			left:100px;
-			top:86px;
-			background-color:blue;
+			position:relative;
+/*			left:10%;
+*/			background-color:blue;
 			height:570px;
-			width:88.5%;
+			width:100%;
 			color:white;
+
 		}
 
 		#links{
-			height:570px;
-			width:10%;
+			height:100px;
+			width:100%;
 			background-color:blue;
 			color:white;
-			font-family: 'Train One', cursive;
-			font-size:10px;
+/*			font-size:10px;
+*/	
 			
+
+		}
+
+		h1{
+			font-family: 'Train One', cursive;
 
 		}
 	
@@ -49,7 +54,9 @@
 
 }
 
-
+.projectlinks{
+	font-size:30px;
+}
 
 a:link {
 	text-decoration:none;
@@ -71,10 +78,19 @@ a:hover {
 
 
 a:active {
-  color: rgb(0, 0, 245);
-  text-decoration:underline;
-}
+  color: blue;
+/*  text-decoration:underline;
+*/}
 
+
+.button{
+	width:33%;
+	display:inline-block;
+	background-color:blue;
+	text-align:center;
+	font-size:15px;
+	text-align:center;
+}
 
 
 
@@ -89,28 +105,39 @@ body{
 <div id="title">
 	
 <center><h1>My Projects</h1></center>
-
-</div>
-
-<div id=projects>
-<u><h1 style="font-family: 'Train One', cursive;padding-right:100px; text-align:center">Project Links</h1><u>	<a href="gift.html">Luca Maxim</a> <br>
-	<a href="code2.html">First Code Sketch</a> <br>
-	<a href="code3.html">Moving Box</a> <br>
-	<a href="array.html">Sports Decider</a> <br>
-	<a href="square.html">Quilt</a> <br>
-</div>
-
 <div id=links>
 	<center><h1>Links</h1></center>
-<a href="journal.html">Journal</a> <br>
-<a href="index.html">Main menu</a> <br>
-<a href="webpage.html">About me</a> <br>
+
+<div class="button"><a href="journal.html">Journal</a></div>
+
+<div class="button"><a href="index.html">Main menu</a></div> 
+<div class="button"><a href="webpage.html">About me</a> </div>
 </div>
-<script type="text/javascript">
+</center>
 
-</script>
 
-<a href=""></a>
 
+<div id=projects>
+
+<center><h1>Project Links</h1></center>
+	<center>
+		<a class="projectlinks" href="gift.html">Luca Maxim</a> <br>
+	<a class="projectlinks" href="code2.html">First Code Sketch</a> <br>
+	<a class="projectlinks" href="code3.html">Moving Box</a> <br>
+	<a class="projectlinks" href="array.html">Sports Decider</a> <br>
+	<a class="projectlinks" href="square.html">Quilt</a> <br>
+	<a class="projectlinks" href="array.html">Sports Picker</a> <br>
+	<a class="projectlinks" href="imageColorChanger.html">Brent Colors</a> <br>
+	<a class="projectlinks" href="teststudy.html">Spanish Imperfect Helper</a> <br>
+	<a class="projectlinks" href="photos.html">Photos</a> <br>
+	<a class="projectlinks" href="valentines.html">Valentines Slinky</a> <br>
+
+	
+
+</center>
+</div>
+
+<!-- style="font-family: 'Train One', cursive;padding-right:100px; text-align:center"
+ -->
 </body>
 </html>

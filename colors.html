@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		
+		body{
+			background-color:blue;
+		}
+
+
+
+
+
+	</style>
+</head>
+<body>
+
+<script type="text/javascript">
+	
+document.addEventListener(
+"mousemove", function(placeholder){
+	console.log(placeholder.clientX, placeholder.clientY)
+
+
+	document.body.style.backgroundColor= "rgb(" + placeholder.clientX/2 + placeholder.clientY/2+ ","+ placeholder.clientX + "," + placeholder.clientY +")"
+}
+
+
+	)
+
+</script>
+
+
+
+
+</body>
+</html>

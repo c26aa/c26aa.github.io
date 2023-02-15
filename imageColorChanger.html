@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		
+		#pic{
+			width:600px;
+			height:500px;
+			/*filter:blur(2px);*/
+			/*filter:hue-rotate(190deg);*/
+			/*filter:contrast(200%);*/
+			/*filter:grayscale(80%);*/
+		/*filter: drop-shadow(16px 16px 20px red) invert(75%);;*/
+		}
+
+
+
+	</style>
+</head>
+<body>
+
+<img src="brent.gif" id=pic>
+
+<script type="text/javascript">
+	
+	document.addEventListener(
+"mousemove", function(placeholder){
+	console.log(placeholder.clientX, placeholder.clientY)
+
+document.body.style.filterContrast= placeholder.clientY + "%"
+
+</script>
+
+</body>
+</html>

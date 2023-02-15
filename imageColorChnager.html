@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		
+		#pic{
+			width:600px;
+			height:500px;
+			/*filter:blur(2px);*/
+			/*filter:hue-rotate(190deg);*/
+			/*filter:contrast(200%);*/
+			/*filter:grayscale(80%);*/
+		/*filter: drop-shadow(16px 16px 20px red) invert(75%);;*/
+		}
+
+
+
+	</style>
+</head>
+<body>
+
+<img src="brent.gif" id=pic>
+
+<script type="text/javascript">
+
+	
+	pic.addEventListener("mousemove", function(placeholder){
+	
+	// pic.style.filter= "hue-rotate("+placeholder.clientY+"deg)";
+pic.style.filter = "drop-shadow(16px 16px 20px red) invert(" + placeholder.clientX/15 + placeholder.clientY/15 + "%)";
+
+ "red);"
+
+console.log(pic.style.filter)
+
+
+})
+
+</script>
+
+</body>
+</html>
