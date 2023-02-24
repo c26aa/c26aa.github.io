@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style>
+		
+
+		#car{
+			width:100px;
+			height:100px;
+			background-color:blue;
+			left:10px;
+			position:absolute;
+		}
+	</style>
+</head>
+<body>
+
+	<div id="car"></div>
+
+	<script type="text/javascript">
+// 		buggy.style.left = "0px"; 
+// 		// starts the car at (0,0)
+
+// 		 var x = parseInt(buggy.style.left);
+// // creates a variable that tracks position
+// 		document.addEventListener("keydown", function(event){
+// 			// when you press a key it runs the function
+// 			console.log(x)
+// 			// logs variable
+// 			x = x+10;
+// // adds 10px each time you press the button
+// 			buggy.style.left = x +"px";
+// 			// adds px to string
+
+// 		})
+// buggy.style.right = "0px";
+
+// 		 var x = parseInt(buggy.style.right);
+
+// 		document.addEventListener("keydown", function(event){
+// 			console.log(x)
+// 			x = x-10;
+
+// 			buggy.style.right = x +"px";
+// 		})
+
+
+ document.onkeydown = function(e) {
+  switch (e.keyCode) {
+    case 37:
+      // left arrow key
+      moveLeft();
+      break;
+    case 38:
+      // up arrow key
+      moveUp();
+      break;
+    case 39:
+      // right arrow key
+      moveRight();
+      break;
+    case 40:
+      // down arrow key
+      moveDown();
+      break;
+  }
+};
+
+function moveLeft() {
+  var car = document.getElementById("car");
+  var left = parseInt(car.style.left) - 5;
+  car.style.left = left + "px";
+}
+
+function moveUp() {
+  var car = document.getElementById("car");
+  var top = parseInt(car.style.top) - 5;
+  car.style.top = top + "px";
+}
+
+function moveRight() {
+  var car = document.getElementById("car");
+  var left = parseInt(car.style.left) + 5;
+  car.style.left = left + "px";
+}
+
+function moveDown() {
+  var car = document.getElementById("car");
+  var top = parseInt(car.style.top) + 5;
+  car.style.top = top + "px";
+}
+
+
+
+	</script>
+
+</body>
+</html>
