@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style type="text/css">
+		
+		.square{
+			width:100px;
+			height:100px;
+			background-color:blue;
+		}
+	</style>
+</head>
+<body>
+
+<div id ="zero" class="square"></div>
+<div id="one" class="square"></div>
+<div class="square"></div>
+<div class="square"></div>
+<div class="square"></div>
+	
+
+	<script type="text/javascript">
+		
+		var squares = Array.from(document.getElementsByClassName("square"));
+		console.log(squares);
+
+		squares.forEach(function(element){
+			element.addEventListener("click", function(){
+				element.style.opacity = "0"
+			})
+		})
+
+		zero.addEventListener("click", function(){
+			one.style.opaciy = "1";
+			one.style.backgroundColor = "red"
+		})
+	</script>
+</body>
+</html>
