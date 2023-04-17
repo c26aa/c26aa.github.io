@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+</head>
+<body>
+
+
+<script type="text/javascript">
+
+var size = 10;
+
+var colors = ['red', 'blue', 'green', 'orange', 'yellow', 'violet', 'indigo'];
+var sizes = ['10','30', '50','80','100','150']
+
+function createDots (placeholder){
+var dot = document.createElement("div")
+document.body.appendChild(dot);
+// dot.style.left = event.clientX +"px"
+// dot.style.top = event.clientY+"px"
+dot.style.height = placeholder +"px"
+dot.style.width = placeholder +"px"
+dot.style.backgroundColor = "black"
+dot.style.borderRadius = "50%"
+dot.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+}
+
+
+for (var i = 0; i< 100; i = i+1){createDots(size)}
+
+// document.addEventListener("mousemove")
+
+
+</script>
+
+
+</body>
+</html>
